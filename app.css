@@ -12,23 +12,21 @@ nav{
 }
 
 .aboutMe{
-    height: 400px;
+    height: 600px;
     border: 2px solid black;
     padding-top: 60px;
 }
 
-.logos{
-    padding: 20px;
-}
 
 .projects{
-    background-color: grey;
+    background-color: rgb(216, 197, 197);
 }
 
 .project{
     border: 2px solid yellow ;
     height: 400px;
     width: 600px;
+    display: flex;
 }
 
 .contactForm{
@@ -40,9 +38,20 @@ footer{
     height: 60px;
     background-color: aquamarine;
 }
+ 
+.img img{
+    height: 300px;
+}
 
-img{
-    width: 120px;
-    height: 120px;
-    background: transparent;
+.aboutMe{
+    display: flex;
+}
+
+.highlight{
+    color: red;
+    font-size: 2rem;
+}
+
+.project img{
+    width: 200px;
 }
