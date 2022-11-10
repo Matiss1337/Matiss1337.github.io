@@ -1,42 +1,100 @@
 body{
     background-color: bisque;
     margin: 0;
+    padding: 0;
 }
 
 nav{
     height: 60px;
     background-color: aquamarine;
-    margin-bottom: 20px;
     position: fixed;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
 }
 
 .aboutMe{
     height: 600px;
-    border: 2px solid black;
     padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 
 .projects{
-    background-color: rgb(216, 197, 197);
+display: flex;
 }
 
 .project{
-    border: 2px solid yellow ;
-    height: 400px;
-    width: 600px;
+    width: 50%;
     display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
+.hover-react .react {
+    width: 70%;
+    font-size: 1.2rem;
+}
+
+.hover-react .javascript {
+    width: 30%;
+}
+
+.hover-javascript .javascript {
+    width: 70%;
+    font-size: 1.2rem;
+}
+
+.hover-javascript .react {
+    width: 30%;
+}
+
+
+.react{
+    background-color: aqua;
+}
+
+.javascript{
+    background-color: beige;
+}
+
+
 .contactForm{
-background-color: aqua;
-height: 400px;
+background-color: rgb(24, 91, 91);
+height: 600px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.contactForm >*{
+    padding: 2rem;
+}
+
+.input{
+    width: 300px;
+    height: 2rem;
+    margin: 0.5rem;
+}
+
+.input.msg{
+    width: 302px;
+    height: 4rem;
+}
+
+.input.button{
+    width: 310px;
 }
 
 footer{
     height: 60px;
-    background-color: aquamarine;
+    background-color: rgb(47, 116, 93);
+    width: 100%;
 }
  
 .img img{
@@ -55,3 +113,6 @@ footer{
 .project img{
     width: 200px;
 }
+
+
+

@@ -18,3 +18,26 @@ const formButton = document.getElementById("contactButton")
 aboutMeButton.addEventListener("click", moveToAboutMe);
 projectsButton.addEventListener("click", moveToProjects);
 formButton.addEventListener("click", moveToForm);
+
+
+
+
+const react = document.getElementById("react");
+const javascript = document.getElementById("javascript");
+
+
+
+react.addEventListener("mouseenter", () =>
+  projects.classList.add("hover-react")
+);
+react.addEventListener("mouseleave", () =>
+  projects.classList.remove("hover-react")
+);
+
+
+javascript.addEventListener("mouseenter", () =>
+  projects.classList.add("hover-javascript")
+);
+javascript.addEventListener("mouseleave", () =>
+  projects.classList.remove("hover-javascript")
+);

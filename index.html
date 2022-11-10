@@ -4,100 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Protfolio, not finished</title>
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
     <nav>
-        <button id="aboutMeButton">about me</button>
-        <button id="projectstButton">Projects</button>
+        <button id="aboutMeButton">About me</button>
+        <button id="projectstButton">My Stack</button>
         <button id="contactButton">Contact</button>
     </nav>
 
 
 <div id="aboutMe" class="aboutMe">
     <div class="info">
-    <h2>Hello! My name is Matt and Im a pasionate selftaught <span class="highlight">Front End developer</span> located in Stockholm. My interest in web development started
-    back in early 2021 when I decided to enroll in Colt Steeles Web bootcamp where i created full stack web aplication which taught HTML, CSS, JS,
-    I also touched nodeJS,express, ejs MongoDB and hosting.
-    
-    This year i started making apps on my own, i learned more about Javascript, Responsive design, Api, DOM manipulation etc.
-    
-    then i got married and i Started working half time so i can study every second week, mostly focusing on React.
-    
-    Here are a few technologies I've been working with recently: 
-    <li>React</li>
-    <li>Firebase</li>
-    <li>SASS</li>
-    <li>Typescript</li>
-    </h2></div>
+    <div class="name"><h1>Matt</h1></div>
+    <div class="what"><h1>Front End Developer</h1></div>
+    <div class="location"><h1>Stockholm</h1></div>
+    </div>
     <div class="img">
-        <img src="./my face.JPG" alt="">
+        <img src="./My Photo.png" alt="">
     </div>
 </div>
 
 
 
 <div id="projects" class="projects">
-<div class="project">
-    <div class="projectImage">
-        <img src="./project.jpg" alt="">
-    </div>
-    <div class="projectInfo">
-        <h1>React CRUD app</h1>
+<div class="project react" id="react">
+        <h1>React</h1>
         <li>React Hooks</li>
         <li>Context</li>
         <li>Firebase authentication</li>
         <li>Firestore database</li>
         <li>Firebase storage</li>
+        <li>SASS</li>
         <li>Router</li>
-        <li>API</li>
-        <li>Sorting</li>
-<h2>info : <a href="https://docs.google.com/document/d/e/2PACX-1vQH4yGyTgoZlEnC3Wd9fWG1-0ZOd3csj8Wt1PmuuDgSAB9t-dGMTwfmhiVaMHQVHx4a5wJrm5PvpTz7/pub" target="_blank">Github</a></h2>
-    </div>
+        <li>API/AXIOS</li>
+        <li>Sorting</li> 
+<h2><a href="https://docs.google.com/document/d/e/2PACX-1vQH4yGyTgoZlEnC3Wd9fWG1-0ZOd3csj8Wt1PmuuDgSAB9t-dGMTwfmhiVaMHQVHx4a5wJrm5PvpTz7/pub" target="_blank">More info</a></h2>
 </div>
-<div class="project">
-    <div class="projectImage">
-        <img src="./project.jpg" alt="">
-    </div>
-    <div class="projectInfo">
-        <h1>Vanilla web dev projects</h1>
+<div class="project javascript" id="javascript">
+        <h1>Javascript</h1>
         <li>NodeJS + Express</li>
         <li>MongoDB + Mongoose</li>
         <li>Cloudinary</li>
         <li>EJS</li>
         <li>NPM packages</li>
+        <li>JSON</li>
+        <li>Loops</li>
+        <li>Arrays</li>
         <li>API</li>
         <li>DOM manipulation</li>
         <li>Responsive design</li>
         <li>Maps and Geocoding</li>
-<h2>info : <a href="https://docs.google.com/document/d/e/2PACX-1vQSF1r_XjaIfXjACd_NQLOk3hhjQYYBeq9AfaOit2IYixg80mU0SmsiPFe_p7UIwGti2ikFn90_N1xf/pub"
-        target="_blank">Github</a></h2>
-    </div>
+        <li>Canva</li>
+<h2><a href="https://docs.google.com/document/d/e/2PACX-1vQSF1r_XjaIfXjACd_NQLOk3hhjQYYBeq9AfaOit2IYixg80mU0SmsiPFe_p7UIwGti2ikFn90_N1xf/pub"
+        target="_blank">More info</a></h2>
 </div>
-<div class="project">
-    <div class="projectImage">
-        <img src="./project.jpg" alt="">
-    </div>
-    <div class="projectInfo">
-        <h1>The Web Developer Bootcamp 2022 by Colt Steele</h1>
-<li>Flexbox</li>
-<li>async/await  .then</li>
-<li>Bootstarp 5</li>
-<li>NOdeJS</li>
-<li>MongoDB</li>
-<li>Schema Design</li>
-<li>Deploying (Heroku)</li>
-<li>terminal</li>
-<h2>info : <a href="https://docs.google.com/document/d/e/2PACX-1vS7zqJEK8FSX2Rlufmn1qqbAVIi6dcaSYnlDO6RwGnIb7oCpwuujqugqmW25p-KZlnzD86ZWCqwvWG9/pub"
-        target="_blank">Github</a></h2>
-
-    </div>
 </div>
 </div>
 
-<div id="contactForm">
-    
+
+<div id="contactForm" class="contactForm">
         <form action="https://formsubmit.co/matissj1337@gmail.com" method="POST">
             <input type="hidden" name="_next" value="http://127.0.0.1:5500/portfolio/index.html">
             <input type="hidden" name="_captcha" value="false">
@@ -109,7 +76,7 @@
             <br>
             <textarea class="input msg" name="message" id="message" cols="30" rows="10">Your message...</textarea>
             <br>
-            <button type="Submit">Send</button>
+            <button class="input button"type="Submit">Send</button>
         </form>
 </div>
 
