@@ -51,19 +51,23 @@ display: flex;
 .hover-react .react {
     width: 75%;
     font-size: 1.3rem;
+    transition: all 400ms ease-in-out;
 }
 
 .hover-react .javascript {
     width: 25%;
+    transition: all 400ms ease-in-out;
 }
 
 .hover-javascript .javascript {
     width: 75%;
     font-size: 1.3rem;
+    transition: all 400ms ease-in-out;
 }
 
 .hover-javascript .react {
     width: 25%;
+    transition: all 400ms ease-in-out;
 }
 
 
