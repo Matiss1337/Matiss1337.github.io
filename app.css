@@ -1,7 +1,7 @@
 :root {
-  --main-color: pink;
+  --main-color: #d90429;
   --secondary-color: pink;
-  --third-color: pink;
+  --third-color: #fdfffc;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
@@ -10,6 +10,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Pacifico', cursive;
+    background-color: var(--third-color);
 }
 
 nav{
@@ -28,12 +29,17 @@ nav button{
 }
 
 .aboutMe{
-    height: 600px;
+    min-height: 600px;
     padding-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+.info>*{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -48,36 +54,9 @@ display: flex;
     flex-direction: column;
 }
 
-.hover-react .react {
-    width: 75%;
-    font-size: 1.3rem;
-    transition: all 400ms ease-in-out;
-}
-
-.hover-react .javascript {
-    width: 25%;
-    transition: all 400ms ease-in-out;
-}
-
-.hover-javascript .javascript {
-    width: 75%;
-    font-size: 1.3rem;
-    transition: all 400ms ease-in-out;
-}
-
-.hover-javascript .react {
-    width: 25%;
-    transition: all 400ms ease-in-out;
-}
 
 
-.react{
 
-}
-
-.javascript{
-
-}
 
 
 .contactForm{
@@ -134,7 +113,7 @@ footer{
 }
 
 .highlight{
-    color: red;
+    color: var(--main-color);
     font-size: 2rem;
 }
 
@@ -147,3 +126,62 @@ footer{
      color: inherit;
  }
 
+@media (max-width: 768px) {
+.aboutMe{
+    flex-direction: column;
+    align-items: center;
+}
+.projects{
+    flex-direction: column;
+    align-items: center;
+}
+.aboutMe{
+    flex-direction: column-reverse;
+}
+.info>*{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+}
+
+
+@media (min-width: 768px) {
+.hover-react .react {
+    width: 75%;
+    font-size: 1.3rem;
+    transition: all 400ms ease-in-out;
+}
+
+.hover-react .javascript {
+    width: 25%;
+    transition: all 400ms ease-in-out;
+}
+
+.hover-javascript .javascript {
+    width: 75%;
+    font-size: 1.3rem;
+    transition: all 400ms ease-in-out;
+}
+
+.hover-javascript .react {
+    width: 25%;
+    transition: all 400ms ease-in-out;
+}
+}
+
+
+
+/* .aboutMe{
+    height: 600px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.projects{
+display: flex;
+} */
