@@ -41,3 +41,5 @@ javascript.addEventListener("mouseenter", () =>
 javascript.addEventListener("mouseleave", () =>
   projects.classList.remove("hover-javascript")
 );
+
+console.log("Hi, im Matt, I love web development.")
