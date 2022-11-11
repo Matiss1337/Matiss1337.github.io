@@ -1,0 +1,227 @@
+:root {
+  --main-color: #d90429;
+  --secondary-color: #f5cac3;
+  --third-color: #fdfffc;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+font-family: 'Montserrat', sans-serif;
+    background-color: var(--third-color);
+    
+}
+
+nav{
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9rem;
+    z-index: 2;
+}
+
+nav button{
+  border: none;
+  height: 2rem;
+}
+
+.aboutMe{
+    min-height: 600px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.info>*{
+    display: flex;
+    justify-content: center;
+}
+
+
+.projects{
+display: flex;
+}
+
+.project{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+.contactForm{
+height: 600px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.contactForm >*{
+    padding: 2rem;
+}
+
+.input{
+    width: 300px;
+    height: 2rem;
+    margin: 0.5rem;
+}
+
+.input.msg{
+    width: 302px;
+    height: 4rem;
+}
+
+.input.button{
+    width: 310px;
+}
+
+footer{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.icons{
+    display: flex;
+    gap: 1rem;
+}
+
+.fa-brands{
+    font-size: 2rem;
+}
+
+.img img{
+    height: 300px;
+}
+
+.aboutMe{
+    display: flex;
+}
+
+.highlight{
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+.highlight h1{
+    text-align: center;
+}
+
+.project img{
+    width: 200px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+ }
+
+button{
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+button{
+    padding: 1rem 1rem;
+    border-radius: 0px 40px 0px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 400ms ease-in-out;
+}
+
+.project button{
+    margin-top: 5px;
+    padding: 0rem 1rem; 
+}
+
+button:hover{
+    border-radius: 40px 0px 40px 0px;
+    scale: 120%;
+    transition: all 400ms ease-in-out;
+}
+
+.border{
+    width: 60%;
+    height: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--main-color);
+}
+.border:nth-of-type(1){
+    transform: translateY(60px);
+    z-index: 1;
+}
+.special-border{
+    transform: translateY(60px);
+}
+
+@media (max-width: 768px) {
+.aboutMe{
+    flex-direction: column;
+    align-items: center;
+}
+.projects{
+    flex-direction: column;
+    align-items: center;
+}
+.aboutMe{
+    flex-direction: column-reverse;
+}
+.info>*{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+nav{
+    gap: 5px;
+}
+}
+
+
+@media (min-width: 768px) {
+.hover-react .react {
+    width: 75%;
+    font-size: 1.3rem;
+    transition: all 400ms ease-in-out;
+}
+
+.hover-react .javascript {
+    width: 25%;
+    transition: all 400ms ease-in-out;
+}
+
+.hover-javascript .javascript {
+    width: 75%;
+    font-size: 1.3rem;
+    transition: all 400ms ease-in-out;
+}
+
+.hover-javascript .react {
+    width: 25%;
+    transition: all 400ms ease-in-out;
+}
+}
+
+
+button{
+    border-color: var(--secondary-color);
+}
