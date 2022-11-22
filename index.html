@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matt Portfolio</title>
     <link rel="stylesheet" href="app.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://kit.fontawesome.com/c22f52cdb9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
+        <div class="toggleTheme">
+        <i id="sun" class="fa-solid fa-sun toggleIcon sun"></i>
+        <i id="moon" class="fa-solid fa-moon toggleIcon moon"></i>
+        </div>
         <button id="aboutMeButton"><h1>About me</h1></button>
         <button id="projectstButton"><h1>My Stack</h1></button>
         <button id="contactButton"><h1>Contact</h1></button>
@@ -71,6 +73,10 @@
 <div id="contactForm" class="contactForm">
         <form action="https://formsubmit.co/matissj1337@gmail.com" method="POST">
             <input type="hidden" name="_next" value="https://matiss1337.github.io/">
+            <!-- "http://127.0.0.1:5500/portfolio/index.html" --> 
+            <!-- this is for local testing -->
+            <!-- "https://matiss1337.github.io/" -->
+            <!-- this is for production -->
             <input type="hidden" name="_captcha" value="false">
             <input class="input" type="text" name="Name" id="name" required placeholder="Name...">
             <br>
@@ -96,4 +102,5 @@
     <script src="app.js
 "></script>
 </body>
-</html>
+<!-- </html>https://codepen.io/alvarotrigo/pen/abVPyaJ -->
+<!-- for switch -->

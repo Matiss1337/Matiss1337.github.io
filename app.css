@@ -2,16 +2,19 @@
   --main-color: #d90429;
   --secondary-color: #f5cac3;
   --third-color: #fdfffc;
+  --fourth-color: black;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Cherry Cream Soda', cursive;
+    font-family: 'Montserrat', sans-serif;
     background-color: var(--third-color);
-    
+    color: var(--fourth-color);
+    transition: all 400ms ease-in-out;
+    font-weight: bold;
 }
 
 nav{
@@ -135,6 +138,7 @@ a{
 
 button{
     background-color: var(--secondary-color);
+    color: var(--fourth-color);
     cursor: pointer;
 }
 
@@ -144,7 +148,6 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 400ms ease-in-out;
 }
 
 .project button{
@@ -155,7 +158,6 @@ button{
 button:hover{
     border-radius: 40px 0px 40px 0px;
     scale: 120%;
-    transition: all 400ms ease-in-out;
 }
 
 .border{
@@ -224,4 +226,16 @@ nav{
 
 button{
     border-color: var(--secondary-color);
+    transition: all 600ms ease-in-out;
+}
+
+
+.toggleIcon{
+    font-size: 2rem;
+    color: var(--fourth-color);
+    cursor: pointer;
+}
+
+#sun{
+    display: none;
 }
