@@ -196,6 +196,9 @@ button:hover{
 nav{
     gap: 5px;
 }
+nav h1{
+    font-size: 1rem;
+}
 }
 
 
