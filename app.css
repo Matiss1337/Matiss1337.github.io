@@ -18,7 +18,7 @@ body{
 }
 
 nav{
-    height: 60px;
+    height: 6rem;
     position: fixed;
     width: 100%;
     display: flex;
@@ -34,12 +34,12 @@ nav button{
 }
 
 .aboutMe{
-    min-height: 600px;
-    padding-top: 60px;
+    min-height: 50rem;
+    padding-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 2rem;
 }
 
 .info>*{
@@ -61,12 +61,8 @@ display: flex;
 
 
 
-
-
-
-
 .contactForm{
-height: 600px;
+height: 40rem;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -78,22 +74,22 @@ flex-direction: column;
 }
 
 .input{
-    width: 300px;
+    width: 20rem;
     height: 2rem;
     margin: 0.5rem;
 }
 
 .input.msg{
-    width: 302px;
+    width: 20rem;
     height: 4rem;
 }
 
 .input.button{
-    width: 310px;
+    width: 20rem;
 }
 
 footer{
-    height: 80px;
+    height: 6rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -111,7 +107,7 @@ footer{
 }
 
 .img img{
-    height: 300px;
+    height: 20rem;
 }
 
 .aboutMe{
@@ -151,13 +147,8 @@ button{
 }
 
 .project button{
-    margin-top: 5px;
+    margin-top: 0.5rem;
     padding: 0rem 1rem; 
-}
-
-button:hover{
-    border-radius: 40px 0px 40px 0px;
-    scale: 120%;
 }
 
 .border{
@@ -169,17 +160,32 @@ button:hover{
     background-color: var(--main-color);
 }
 .border:nth-of-type(1){
-    transform: translateY(60px);
+    transform: translateY(5.5rem);
     z-index: 1;
 }
 .special-border{
     transform: translateY(60px);
 }
 
+
+li {
+  white-space: nowrap; 
+}
+
+
+@media (hover: hover) {
+button:hover{
+    border-radius: 40px 0px 40px 0px;
+    scale: 110%;
+}
+}
+
+
 @media (max-width: 768px) {
 .aboutMe{
     flex-direction: column;
     align-items: center;
+    flex-wrap: nowrap;
 }
 .projects{
     flex-direction: column;
@@ -198,6 +204,17 @@ nav{
 }
 nav h1{
     font-size: 1rem;
+}
+.input{
+    width: 16rem;
+}
+
+.input.msg{
+    width: 16rem;
+}
+
+.input.button{
+    width: 16rem;
 }
 }
 
