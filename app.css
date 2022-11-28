@@ -219,6 +219,31 @@ nav h1{
 }
 
 
+@media (min-width: 768px) {
+.hover-react .react {
+    width: 75%;
+    font-size: 1.3rem;
+    transition: all 400ms ease-in-out;
+}
+
+.hover-react .javascript {
+    width: 25%;
+    transition: all 400ms ease-in-out;
+}
+
+.hover-javascript .javascript {
+    width: 75%;
+    font-size: 1.3rem;
+    transition: all 400ms ease-in-out;
+}
+
+.hover-javascript .react {
+    width: 25%;
+    transition: all 400ms ease-in-out;
+}
+}
+
+
 button{
     border-color: var(--secondary-color);
     transition: all 600ms ease-in-out;
@@ -235,6 +260,6 @@ button{
     display: none;
 }
 
-#projects{
+#project-hover{
 height: 3rem;
 }
